@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Installation des dépendances sans les dev
-RUN npm ci --ignore-scripts --omit=dev
+RUN npm ci --ignore-scripts
 
 # Copie du code
 COPY . .
