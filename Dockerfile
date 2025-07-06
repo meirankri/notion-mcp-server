@@ -29,6 +29,9 @@ RUN npm link
 
 # Cloud Run écoute sur $PORT
 ENV PORT=8080
+ENV MCP_PORT=8080
+
 EXPOSE 8080
+
 
 CMD ["notion-mcp-server"]
